@@ -54,10 +54,11 @@ Git安裝
 
 * 設定連結遠端資料庫(一次性)
 
-		$ git remote add origin <target>
+		//參考指令: git remote add <remote-name> <target>
+		$ git remote add origin https://github.com/ysgau/projName.git
 		//target 可以是...
-		//git server    => git://host/projName.git
-		//github        => https://github.com/ysgau/projName.git
+		//   git server => git://host/projName.git
+		//       github => https://github.com/ysgau/projName.git
 		//remote folder => \\host\gitProjs\projName.git
 
 * 確認是否有設定連結遠端儲存庫(視情況檢查)
@@ -68,5 +69,55 @@ Git安裝
 
 * 將本地儲存庫的資料, 上傳至遠端儲存庫(總是)
 
-		//指令 git push [remote-name] [branch-name]
-		$ git push origin master
+		//參考指令: git push [remote-name] [branch-name]
+		$ git push -u origin master
+
+複製遠端儲存庫的專案
+------
+
+* 複製遠端儲存庫的專案
+
+		//參考指令: git clone <source> [localFolderName]
+		$ git clone https://github.com/ysgau/projName.git myProj
+
+更新來自於遠端儲存庫的文檔
+------
+
+* 更新來自於遠端儲存庫的文檔
+		//參考指令: git pull [remote-name] [branch-name]
+		$ git pull origin master
+		
+		//[資訊] git pull == git fetch + git merge
+
+退回指定版本
+------
+
+* 退回前一版
+
+		//參考指令: git reset HEAD~
+		$ git reset HEAD~
+		
+		//退回時若要捨棄所有更改(與新增)文檔, 則多增加 --hard 參數
+		$ git reset HEAD~ --hard
+
+* 退回指定版本
+
+		//利用git reflog指令, 調閱出所有進版檔頭資訊
+		$ git reflog
+		5b390d9 (HEAD -> master, origin/master) HEAD@{0}: commit: markdown v10
+		2b911b6 HEAD@{1}: commit: markdown v9
+		03eda0f HEAD@{2}: commit: markdown v8
+		8dc8afd HEAD@{3}: commit: markdown v7
+		5e7415e HEAD@{4}: commit: markdown v6
+		3931199 HEAD@{5}: commit: markdown v5
+		7fb610b HEAD@{6}: commit: markdown v4
+		c8b1515 HEAD@{7}: commit: markdown v3
+		60281de HEAD@{8}: commit: markdown t2
+		47d1206 HEAD@{9}: commit: markdown test
+		8523185 HEAD@{10}: commit (initial): frist commit
+		
+		//參考指令: git reset <head_id> [--hard]
+		$ git reset 8dc8afd 
+
+		//若沒有使用--hard, 並要"將未捨棄的文檔併入此版本"的話, 可用 "git add ."
+		$ git add .
