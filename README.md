@@ -19,17 +19,30 @@ Git安裝
 建立專案
 ------
 * 建立工作目錄
+
 		mkdir projName
+
 * 切換到工作目錄
+
 		cd projName
+
 * 建立Local Repository
+
 		git init
+
 
 建立文檔並送交至Git
 ------
+
 * 建立文檔
+
 		echo hello > hello.txt
+
 * 將文檔提交更新到儲存庫
+
 		git add hello.txt
+
 	* 也可以加入所有有新增/異動之文檔
+
 		git add .
+
