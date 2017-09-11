@@ -175,6 +175,8 @@ Git Learning
 ### 附記
 ------
 
-* 在Visual Studio Code使用Git
+* 在VS Code使用Git
 	- 建議安裝使用 [TortoiseGit](https://tortoisegit.org/download/)
 	- 建議安裝VS Code擴充套件: [Git History](https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory)
+* Angular2的 .gitignore 設定
+	- [可參考](https://github.com/ysgau/GitLearning/blob/master/.gitignore)
