@@ -122,3 +122,40 @@ Git安裝
 
 		//若沒有使用--hard, 且要"將未捨棄的文檔併入此版本"的話, 可用 "git add ."
 		$ git add .
+
+分支(Branch)
+------
+
+* 查看目前工作區所停駐的分支為何
+
+		$ git branch
+		* master
+		
+		//查詢所有的分支; 有星符的為目前工作區所停駐的分支
+		$ git branch -a
+		* master
+		  remotes/origin/master
+
+* 建立分支
+
+		//以現在的分支與版本, 建立出新的分支 git checkout -b <branch-name>
+		$ git checkout -b develop
+		
+		//上述的指令相當於執行下面這兩條命令：
+		$ git branch develop
+		$ git checkout develop
+
+* 合併分支
+
+		//切換到目標分支
+		$ git checkout master
+		
+		//合併來源分支
+		$ git merge develop
+
+* 刪除分支
+
+		//若確認分支不再使用, 則進行刪除;
+		$ git branch -d develop
+		//或強制刪除
+		$ git branch -D develop
