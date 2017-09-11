@@ -6,7 +6,7 @@ GitLearning
 
 Git安裝
 ------
-* [Git下載並安裝] (https://git-scm.com/downloads); (建議安裝 [2.14.1](https://github.com/git-for-windows/git/releases/download/v2.14.1.windows.1/Git-2.14.1-64-bit.exe) 以上)
+* [Git下載並安裝](https://git-scm.com/downloads); (建議安裝 [2.14.1](https://github.com/git-for-windows/git/releases/download/v2.14.1.windows.1/Git-2.14.1-64-bit.exe) 以上)
 * 設定你操作Git時的識別名稱
 
 		$ git config --global user.name "your name"
@@ -53,6 +53,7 @@ Git安裝
 ------
 
 * 設定連結遠端資料庫(一次性)
+
 		$ git remote add origin <target>
 		//target 可以是...
 		//git server    => git://host/projName.git
