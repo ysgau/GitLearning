@@ -4,7 +4,7 @@ Git Learning
 作者: 狐狸 高
 
 
-Git安裝
+### Git安裝
 ------
 * [Git下載並安裝](https://git-scm.com/downloads); (建議安裝 [2.14.1](https://github.com/git-for-windows/git/releases/download/v2.14.1.windows.1/Git-2.14.1-64-bit.exe) 以上)
 * 設定你操作Git時的識別名稱
@@ -16,7 +16,7 @@ Git安裝
 
 		$ git config --global pull.ff false
 
-建立專案
+### 建立專案
 ------
 * 建立工作目錄
 
@@ -31,7 +31,7 @@ Git安裝
 		$ git init
 
 
-建立文檔並送交至Git
+### 建立文檔並送交至Git
 ------
 
 * 建立文檔
@@ -49,7 +49,7 @@ Git安裝
 
 		$ git commit -m "your comment"
 
-送交至遠端儲存庫(Remote Repository)
+### 送交至遠端儲存庫(Remote Repository)
 ------
 
 * 設定連結遠端資料庫(一次性)
@@ -60,7 +60,7 @@ Git安裝
 		//target 可以是...
 		//   git server => git://host/projName.git
 		//       github => https://github.com/ysgau/projName.git
-		//remote folder => \\host\gitProjs\projName.git
+		//remote folder => file://host/gitProjs/projName.git
 
 * 確認是否有設定連結遠端儲存庫(視情況檢查)
 
@@ -73,7 +73,7 @@ Git安裝
 		//參考指令: git push [remote-name] [branch-name]
 		$ git push -u origin master
 
-複製遠端儲存庫的專案
+### 複製遠端儲存庫的專案
 ------
 
 * 複製遠端儲存庫的專案
@@ -81,7 +81,7 @@ Git安裝
 		//參考指令: git clone <source> [localFolderName]
 		$ git clone https://github.com/ysgau/projName.git myProj
 
-更新來自於遠端儲存庫的文檔
+### 更新來自於遠端儲存庫的文檔
 ------
 
 * 更新來自於遠端儲存庫的文檔
@@ -90,7 +90,7 @@ Git安裝
 		
 		//[資訊] git pull == git fetch + git merge
 
-退回指定版本
+### 退回指定版本
 ------
 
 * 退回前一版
@@ -123,7 +123,7 @@ Git安裝
 		//若沒有使用--hard, 且要"將未捨棄的文檔併入此版本"的話, 可用 "git add ."
 		$ git add .
 
-分支(Branch)
+### 分支(Branch)
 ------
 
 * 查看目前工作區所停駐的分支為何
@@ -131,7 +131,7 @@ Git安裝
 		$ git branch
 		* master
 		
-		//查詢所有的分支; 有星符的為目前工作區所停駐的分支
+		//查詢所有的分支; 有星符(*)的為目前工作區所停駐的分支
 		$ git branch -a
 		* master
 		  remotes/origin/master
@@ -159,3 +159,10 @@ Git安裝
 		$ git branch -d develop
 		//或強制刪除
 		$ git branch -D develop
+
+### 附記
+------
+
+* 在Visual Studio Code使用Git
+	- 建議安裝使用 [TortoiseGit](https://tortoisegit.org/download/)
+	- 建議安裝VS Code擴充套件: [Git History](https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory)
