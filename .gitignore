@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-Upload.bat
-=======
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # compiled output
@@ -43,4 +40,3 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
->>>>>>> 5d614abd3023f7079ecd3235b6c17dd4a4f6c426
