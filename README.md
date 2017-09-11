@@ -1,4 +1,4 @@
-GitLearning
+Git Learning
 ======
 
 作者: 狐狸 高
@@ -116,8 +116,8 @@ Git安裝
 		47d1206 HEAD@{9}: commit: markdown test
 		8523185 HEAD@{10}: commit (initial): frist commit
 		
-		//參考指令: git reset <head_id> [--hard]
+		//指定欲回版本的檔頭 (在此範例為, 回到"v7"版)
 		$ git reset 8dc8afd 
 
-		//若沒有使用--hard, 並要"將未捨棄的文檔併入此版本"的話, 可用 "git add ."
+		//若沒有使用--hard, 且要"將未捨棄的文檔併入此版本"的話, 可用 "git add ."
 		$ git add .
