@@ -60,10 +60,12 @@ Git安裝
 		//remote folder => \\host\gitProjs\projName.git
 
 * 確認是否有設定連結遠端儲存庫(視情況檢查)
+
 		$ git remote -v
 		origin  https://github.com/ysgau/projName.git (fetch)
 		origin  https://github.com/ysgau/projName.git (push)
 
 * 將本地儲存庫的資料, 上傳至遠端儲存庫(總是)
+
 		//指令 git push [remote-name] [branch-name]
 		$ git push origin master
