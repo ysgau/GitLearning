@@ -179,4 +179,4 @@ Git Learning
 	- 建議安裝使用 [TortoiseGit](https://tortoisegit.org/download/)
 	- 建議安裝VS Code擴充套件: [Git History](https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory)
 * Angular2的 .gitignore 設定
-	- [可參考](https://github.com/ysgau/GitLearning/blob/master/.gitignore)
+	- [可參考這裡](https://github.com/ysgau/GitLearning/blob/master/.gitignore)
