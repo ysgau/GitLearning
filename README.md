@@ -55,11 +55,11 @@ Git Learning
 
 * 查詢歷史記錄
 
-```
+
 		$ git log
 		//或
 		$ git reflog
-```
+
 
 ### 送交至遠端儲存庫(Remote Repository)
 ------
