@@ -1,121 +1,121 @@
 Git Learning
 ======
 
-§@ªÌ: ª°¯W °ª
+ä½œè€…: ç‹ç‹¸ é«˜
 
 
-### Git¦w¸Ë
+### Gitå®‰è£
 ------
-* [Git¤U¸ü¨Ã¦w¸Ë](https://git-scm.com/downloads); («ØÄ³¦w¸Ë [2.14.1](https://github.com/git-for-windows/git/releases/download/v2.14.1.windows.1/Git-2.14.1-64-bit.exe) ¥H¤W)
-* ³]©w§A¾Ş§@Git®ÉªºÃÑ§O¦WºÙ
+* [Gitä¸‹è¼‰ä¸¦å®‰è£](https://git-scm.com/downloads); (å»ºè­°å®‰è£ [2.14.1](https://github.com/git-for-windows/git/releases/download/v2.14.1.windows.1/Git-2.14.1-64-bit.exe) ä»¥ä¸Š)
+* è¨­å®šä½ æ“ä½œGitæ™‚çš„è­˜åˆ¥åç¨±
 
 		$ git config --global user.name "your name"
 		$ git config --global user.email "your email"
 
-* Ãö³¬Pull¥HFF (fast forward)¥\¯à
+* é—œé–‰Pullä»¥FF (fast forward)åŠŸèƒ½
 
 		$ git config --global pull.ff false
 
-### «Ø¥ß±M®×
+### å»ºç«‹å°ˆæ¡ˆ
 ------
-* «Ø¥ß¤u§@¥Ø¿ı
+* å»ºç«‹å·¥ä½œç›®éŒ„
 
 		$ mkdir projName
 
-* ¤Á´«¨ì¤u§@¥Ø¿ı
+* åˆ‡æ›åˆ°å·¥ä½œç›®éŒ„
 
 		$ cd projName
 
-* «Ø¥ß¥»¦aÀx¦s®w(Local Repository)
+* å»ºç«‹æœ¬åœ°å„²å­˜åº«(Local Repository)
 
 		$ git init
 
 
-### «Ø¥ß¤åÀÉ¨Ã°e¥æ¦ÜGit
+### å»ºç«‹æ–‡æª”ä¸¦é€äº¤è‡³Git
 ------
 
-* «Ø¥ß¤åÀÉ
+* å»ºç«‹æ–‡æª”
 
 		$ echo hello > hello.txt
 
-* ±N¤åÀÉ´£¥æ¨ìStaged DB
+* å°‡æ–‡æª”æäº¤åˆ°Staged DB
 
 		$ git add hello.txt
 		
-		//©Î¥[¤J©Ò¦³·s¼W/²§°Ê¤§¤åÀÉ
+		//æˆ–åŠ å…¥æ‰€æœ‰æ–°å¢/ç•°å‹•ä¹‹æ–‡æª”
 		$ git add .
 
-* ½T»{´£¥æ¦Ü¥»¦aÀx¦s®w, ¨Ã¥[¤J¦¹¦¸´£¥æ¤§µùÄÀ
+* ç¢ºèªæäº¤è‡³æœ¬åœ°å„²å­˜åº«, ä¸¦åŠ å…¥æ­¤æ¬¡æäº¤ä¹‹è¨»é‡‹
 
 		$ git commit -m "your comment"
 
 
-### ¾ú¥v°O¿ı¬d¸ß
+### æ­·å²è¨˜éŒ„æŸ¥è©¢
 ------
 
-* ¬d¸ß¾ú¥v°O¿ı
+* æŸ¥è©¢æ­·å²è¨˜éŒ„
 
 
 		$ git log
-		//©Î
+		//æˆ–
 		$ git reflog
 
 
-### °e¥æ¦Ü»·ºİÀx¦s®w(Remote Repository)
+### é€äº¤è‡³é ç«¯å„²å­˜åº«(Remote Repository)
 ------
 
-* ³]©w³sµ²»·ºİ¸ê®Æ®w(¤@¦¸©Ê)
+* è¨­å®šé€£çµé ç«¯è³‡æ–™åº«(ä¸€æ¬¡æ€§)
 
-		//°Ñ¦Ò«ü¥O: git remote add <remote-name> <target>
+		//åƒè€ƒæŒ‡ä»¤: git remote add <remote-name> <target>
 		$ git remote add origin https://github.com/ysgau/projName.git
 		
-		//target ¥i¥H¬O...
+		//target å¯ä»¥æ˜¯...
 		//   git server => git://host/projName.git
 		//       github => https://github.com/ysgau/projName.git
 		//remote folder => file://host/gitProjs/projName.git
 
-* ½T»{¬O§_¦³³]©w³sµ²»·ºİÀx¦s®w(µø±¡ªpÀË¬d)
+* ç¢ºèªæ˜¯å¦æœ‰è¨­å®šé€£çµé ç«¯å„²å­˜åº«(è¦–æƒ…æ³æª¢æŸ¥)
 
 		$ git remote -v
 		origin  https://github.com/ysgau/projName.git (fetch)
 		origin  https://github.com/ysgau/projName.git (push)
 
-* ±N¥»¦aÀx¦s®wªº¸ê®Æ, ¤W¶Ç¦Ü»·ºİÀx¦s®w(Á`¬O)
+* å°‡æœ¬åœ°å„²å­˜åº«çš„è³‡æ–™, ä¸Šå‚³è‡³é ç«¯å„²å­˜åº«(ç¸½æ˜¯)
 
-		//°Ñ¦Ò«ü¥O: git push [remote-name] [branch-name]
+		//åƒè€ƒæŒ‡ä»¤: git push [remote-name] [branch-name]
 		$ git push -u origin master
 
-### ½Æ»s»·ºİÀx¦s®wªº±M®×
+### è¤‡è£½é ç«¯å„²å­˜åº«çš„å°ˆæ¡ˆ
 ------
 
-* ½Æ»s»·ºİÀx¦s®wªº±M®×
+* è¤‡è£½é ç«¯å„²å­˜åº«çš„å°ˆæ¡ˆ
 
-		//°Ñ¦Ò«ü¥O: git clone <source> [localFolderName]
+		//åƒè€ƒæŒ‡ä»¤: git clone <source> [localFolderName]
 		$ git clone https://github.com/ysgau/projName.git myProj
 
-### §ó·s¨Ó¦Û©ó»·ºİÀx¦s®wªº¤åÀÉ
+### æ›´æ–°ä¾†è‡ªæ–¼é ç«¯å„²å­˜åº«çš„æ–‡æª”
 ------
 
-* §ó·s¨Ó¦Û©ó»·ºİÀx¦s®wªº¤åÀÉ
-		//°Ñ¦Ò«ü¥O: git pull [remote-name] [branch-name]
+* æ›´æ–°ä¾†è‡ªæ–¼é ç«¯å„²å­˜åº«çš„æ–‡æª”
+		//åƒè€ƒæŒ‡ä»¤: git pull [remote-name] [branch-name]
 		$ git pull origin master
 		
-		//[¸ê°T] git pull == git fetch + git merge
+		//[è³‡è¨Š] git pull == git fetch + git merge
 
-### °h¦^«ü©wª©¥»
+### é€€å›æŒ‡å®šç‰ˆæœ¬
 ------
 
-* °h¦^«e¤@ª©
+* é€€å›å‰ä¸€ç‰ˆ
 
-		//°Ñ¦Ò«ü¥O: git reset HEAD~
+		//åƒè€ƒæŒ‡ä»¤: git reset HEAD~
 		$ git reset HEAD~
 		
-		//°h¦^®É­Y­n±Ë±ó©Ò¦³§ó§ï(»P·s¼W)¤åÀÉ, «h¦h¼W¥[ --hard °Ñ¼Æ
+		//é€€å›æ™‚è‹¥è¦æ¨æ£„æ‰€æœ‰æ›´æ”¹(èˆ‡æ–°å¢)æ–‡æª”, å‰‡å¤šå¢åŠ  --hard åƒæ•¸
 		$ git reset HEAD~ --hard
 
-* °h¦^«ü©wª©¥»
+* é€€å›æŒ‡å®šç‰ˆæœ¬
 
-		//§Q¥Îgit reflog«ü¥O, ½Õ¾\¥X©Ò¦³¶iª©ÀÉÀY¸ê°T
+		//åˆ©ç”¨git reflogæŒ‡ä»¤, èª¿é–±å‡ºæ‰€æœ‰é€²ç‰ˆæª”é ­è³‡è¨Š
 		$ git reflog
 		5b390d9 (HEAD -> master, origin/master) HEAD@{0}: commit: markdown v10
 		2b911b6 HEAD@{1}: commit: markdown v9
@@ -129,54 +129,74 @@ Git Learning
 		47d1206 HEAD@{9}: commit: markdown test
 		8523185 HEAD@{10}: commit (initial): frist commit
 		
-		//«ü©w±ı¦^ª©¥»ªºÀÉÀY (¥H¦^¨ì"v7"ª©¬°¨Ò)
+		//æŒ‡å®šæ¬²å›ç‰ˆæœ¬çš„æª”é ­ (ä»¥å›åˆ°"v7"ç‰ˆç‚ºä¾‹)
 		$ git reset 8dc8afd 
 
-		//­Y¨S¦³¨Ï¥Î--hard, ¥B­n"±N¥¼±Ë±óªº¤åÀÉ¨Ö¤J¦¹ª©¥»"ªº¸Ü, ¥i¥Î "git add ."
+		//è‹¥æ²’æœ‰ä½¿ç”¨--hard, ä¸”è¦"å°‡æœªæ¨æ£„çš„æ–‡æª”ä½µå…¥æ­¤ç‰ˆæœ¬"çš„è©±, å¯ç”¨ "git add ."
 		$ git add .
 
-### ¤À¤ä(Branch)
+### åˆ†æ”¯(Branch)
 ------
 
-* ¬d¬İ¥Ø«e¤u§@°Ï©Ò°±¾nªº¤À¤ä¬°¦ó
+* æŸ¥çœ‹ç›®å‰å·¥ä½œå€æ‰€åœé§çš„åˆ†æ”¯ç‚ºä½•
 
 		$ git branch
 		* master
 		
-		//¬d¸ß©Ò¦³ªº¤À¤ä; ¦³¬P²Å(*)ªº¬°¥Ø«e¤u§@°Ï©Ò°±¾nªº¤À¤ä
+		//æŸ¥è©¢æ‰€æœ‰çš„åˆ†æ”¯; æœ‰æ˜Ÿç¬¦(*)çš„ç‚ºç›®å‰å·¥ä½œå€æ‰€åœé§çš„åˆ†æ”¯
 		$ git branch -a
 		* master
 		  remotes/origin/master
 
-* «Ø¥ß¤À¤ä
+* å»ºç«‹åˆ†æ”¯
 
-		//¥H²{¦bªº¤À¤ä»Pª©¥», «Ø¥ß¥X·sªº¤À¤ä git checkout -b <branch-name>
+		//ä»¥ç¾åœ¨çš„åˆ†æ”¯èˆ‡ç‰ˆæœ¬, å»ºç«‹å‡ºæ–°çš„åˆ†æ”¯ git checkout -b <branch-name>
 		$ git checkout -b develop
 		
-		//¤W­zªº«ü¥O¬Û·í©ó°õ¦æ¤U­±³o¨â±ø©R¥O¡G
+		//ä¸Šè¿°çš„æŒ‡ä»¤ç›¸ç•¶æ–¼åŸ·è¡Œä¸‹é¢é€™å…©æ¢å‘½ä»¤ï¼š
 		$ git branch develop
 		$ git checkout develop
 
-* ¦X¨Ö¤À¤ä
+* åˆä½µåˆ†æ”¯
 
-		//¤Á´«¨ì¥Ø¼Ğ¤À¤ä
+		//åˆ‡æ›åˆ°ç›®æ¨™åˆ†æ”¯
 		$ git checkout master
 		
-		//¦X¨Ö¨Ó·½¤À¤ä
+		//åˆä½µä¾†æºåˆ†æ”¯
 		$ git merge develop
 
-* §R°£¤À¤ä
+* åˆªé™¤åˆ†æ”¯
 
-		//­Y½T»{¤À¤ä¤£¦A¨Ï¥Î, «h¶i¦æ§R°£;
+		//è‹¥ç¢ºèªåˆ†æ”¯ä¸å†ä½¿ç”¨, å‰‡é€²è¡Œåˆªé™¤;
 		$ git branch -d develop
-		//©Î±j¨î§R°£
+		//æˆ–å¼·åˆ¶åˆªé™¤
 		$ git branch -D develop
 
-### ªş°O
+### æš«å­˜
+
+* æŸ¥çœ‹ç›®å‰çš„æš«å­˜åˆ—è¡¨
+        $ git stash list
+
+* æš«åœæ‰‹é‚Šé€²è¡Œä¸­çš„å·¥ä½œ, ä¸¦å°‡ç›®å‰çš„æ‰€æœ‰ä¿®æ”¹ä¿ç•™ä¸‹ä¾†
+        $ git stash save --keep-index
+
+* å°‡æš«å­˜å–å›è‡³ç›®å‰çš„branch
+        $ git stash pop
+
+* åˆªé™¤æš«å­˜
+
+        //åˆªé™¤æš«å­˜
+        $ git stash drop
+        
+        //æˆ–,æ¸…é™¤æ‰€æœ‰æš«å­˜
+        $ git stash clear
+
+
+### é™„è¨˜
 ------
 
-* ¦bVS Code¨Ï¥ÎGit
-	- «ØÄ³¦w¸Ë¨Ï¥Î [TortoiseGit](https://tortoisegit.org/download/)
-	- «ØÄ³¦w¸ËVS CodeÂX¥R®M¥ó: [Git History](https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory)
-* Angular2ªº .gitignore ³]©w
-	- [¥i°Ñ¦Ò³o¸Ì](https://github.com/ysgau/GitLearning/blob/master/.gitignore)
+* åœ¨VS Codeä½¿ç”¨Git
+	- å»ºè­°å®‰è£ä½¿ç”¨ [TortoiseGit](https://tortoisegit.org/download/)
+	- å»ºè­°å®‰è£VS Codeæ“´å……å¥—ä»¶: [Git History](https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory)
+* Angular2çš„ .gitignore è¨­å®š
+	- [å¯åƒè€ƒé€™è£¡](https://github.com/ysgau/GitLearning/blob/master/.gitignore)
