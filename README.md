@@ -175,12 +175,15 @@ Git Learning
 ### 暫存
 
 * 查看目前的暫存列表
+
         $ git stash list
 
 * 暫停手邊進行中的工作, 並將目前的所有修改保留下來
+
         $ git stash save --keep-index
 
 * 將暫存取回至目前的branch
+
         $ git stash pop
 
 * 刪除暫存
